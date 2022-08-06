@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="4a.css">
+    <title>Assignmrnt-4A</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+     integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="title">
+            <h3>My Profile</h3>
+        </div>
+
+        <div id="description">
+            <p>Update your personal Information</p>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-2">
+                <div id="image">
+                    <img src="image/pro.png" alt="Girl in a jacket" width="100" height="125">
+                </div>
+            </div>
+
+            <div class="col-md-10">
+                <form id="userinfo-form" action="url">
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label id="fname-label" for="fname">First Name</label>
+                            <input type="text" name="fname" id="fname" class="form-control" pattern="[A-Za-z]{3}" placeholder="First Name">
+                        </div>
+
+                        <div class="col-md-6 ">
+                            <label id="lname-label" for="lname">Last Name</label>
+                            <input type="text" name="lname" id="lname" class="form-control" pattern="[A-Za-z]{3}"  placeholder="Last Name">
+                        </div>
+                    </div>
+                    
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label id="email-label" for="email">Email ID</label>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            fill="currentColor" class="bi bi-envelope" viewBox="0 0 16 16">
+                                            <path
+                                                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+                                        </svg></span>
+                                </div>
+                                <input type="email" class="form-control" placeholder="notifications@intimepros.com"
+                                    aria-label="Username" aria-describedby="basic-addon1"
+                                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" />
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <label id="pass-label" for="pass">Password</label>
+
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1"><svg
+                                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24"
+                                            height="24">
+                                            <path d="M15.5 12a3.5 3.5 0 11-7 0 3.5 3.5 0 017 0z"></path>
+                                            <path fill-rule="evenodd"
+                                                d="M12 3.5c-3.432 0-6.125 1.534-8.054 3.24C2.02 8.445.814 10.352.33 11.202a1.6 1.6 0 000 1.598c.484.85 1.69 2.758 3.616 4.46C5.876 18.966 8.568 20.5 12 20.5c3.432 0 6.125-1.534 8.054-3.24 1.926-1.704 3.132-3.611 3.616-4.461a1.6 1.6 0 000-1.598c-.484-.85-1.69-2.757-3.616-4.46C18.124 5.034 15.432 3.5 12 3.5zM1.633 11.945c.441-.774 1.551-2.528 3.307-4.08C6.69 6.314 9.045 5 12 5c2.955 0 5.309 1.315 7.06 2.864 1.756 1.553 2.866 3.307 3.307 4.08a.111.111 0 01.017.056.111.111 0 01-.017.056c-.441.774-1.551 2.527-3.307 4.08C17.31 17.685 14.955 19 12 19c-2.955 0-5.309-1.315-7.06-2.864-1.756-1.553-2.866-3.306-3.307-4.08A.11.11 0 011.616 12a.11.11 0 01.017-.055z">
+                                        </svg></span>
+                                </div>
+
+                                <input type="password" name="password" id="typePassword" class="form-control"
+                                    placeholder="Current password" formaction="url"
+                                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                                    title="Minimum length 4.One upper case character and one lowercase character must be included.Password must have one alpha-numeric value."
+                                    required>
+                            </div>
+                        </div>
+
+                        <div id="button">
+                            <button type="save" class="btn btn-primary" formaction="url">Save</button>
+                        </div>
+                    </div>
+
+
+
+
+
+                </form>
+            </div>
+</body>
+
+
+
+
+
+
+</html>
